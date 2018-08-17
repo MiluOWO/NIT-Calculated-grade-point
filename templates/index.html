@@ -1,0 +1,12 @@
+<h1>Hello!</h1>
+<form method="POST">
+{{ form.hidden_tag() }}
+{{ form.name.label }} {{ form.name() }}<br>
+{{ form.password.label }} {{ form.password() }}<br>
+{{ form.xq.label }} {{ form.xq() }}<br> <p>例：2014-2015-1，为2014-2015学年第一学期</p>
+{{ form.submit() }}
+</form>
+<h2>这个成绩当存在补考的时候，是错误的</h2>
+<h3>这个BUG以后改……<h3>
+<h2>你的绩点为: {% if name %}{{ name }}{% endif %}</h2>
+<p>{% if kcm1 %}{{ kcm1 }}{% endif %}<p>
